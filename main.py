@@ -77,7 +77,3 @@ def eliminar_persona(id: int):
         raise HTTPException(status_code=404, detail="Persona no encontrada")
     db.delete(persona)
     db.commit()
-
-
-#python -m uvicorn main:app --reload
-#con esto pude levantar el servidor y probar los endpoints
